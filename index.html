@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="registration-form">
+    <div class="container">
+      <h2>Registration</h2>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </fieldset>
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <select id="source" name="source">
+            <option value="friend">A Friend</option>
+            <option value="ad">Add</option>
+            <option value="social-media">Social Media</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Subscription Type</legend>
+          <label>
+            <input type="radio" name="subscription" value="basic" required> Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="premium"> Premium
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Options</legend>
+          <label>
+            <input type="checkbox" name="newsletter" value="subscribe"> Subscribe to newsletter
+          </label>
+          <label>
+            <input type="checkbox" name="terms" value="agree" required> I agree to the Terms and Conditions
+          </label>
+        </fieldset>
+        <div class="form-actions">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
